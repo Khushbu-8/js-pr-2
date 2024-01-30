@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+    var phy = parseInt(prompt("Enter Physicss marks : "));
+    var chem = parseInt(prompt("Enter Chemistry  : "));
+    var bio = parseInt(prompt("Enter Biology  : "));
+    var meths = parseInt(prompt("Enter Methemetics  : "));
+    var comp = parseInt(prompt("Enter Computer  : "));
+    
+    document.write(`<h3>Physics  = ${phy}</h3>`);
+    document.write(`<h3>Chemistry  = ${chem}</h3>`);
+    document.write(`<h3>Biology  = ${bio}</h3>`);
+    document.write(`<h3>Mathematics  = ${meths}</h3>`);
+    document.write(`<h3>Computer  = ${comp}</h3>`);
+  
+    
+    var total = phy+chem+bio+meths+comp;
+    var persent = (phy+chem+bio+meths+comp)/5;
+    document.write(`<h2>Total = ${total}</h2>`)
+
+    if(persent >= 90 && persent < 100){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = A</h2>`);
+    }else if(persent >= 80 && persent < 90){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = B</h2>`);
+    }else if(persent >= 70 && persent < 80){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = C</h2>`);
+    }else if(persent >= 60 && persent <70){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = D</h2>`);
+    }else if(persent >= 50 && persent < 60){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = E</h2>`);
+    }else if(persent >= 40 && persent < 40){
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>Grade = F</h2>`);
+    }else{
+        document.write(`<h2>Percentage = ${persent}%</h2><h2>you are Faile...</h2>`);
+    }
+
+    
+
+</script>
+
+</body>
+</html>
